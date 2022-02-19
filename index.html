@@ -1,0 +1,420 @@
+<html lang="zh-CN">
+<head> 
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="initial-scale=0.9, maximum-scale=1.0, minimum-scale=0.9, user-scalable=0, width=device-width">
+    
+
+    <meta itemprop="name" content="小边の个人主页">
+
+ 
+<meta itemprop="image" content="https://q1.qlogo.cn/headimg_dl?dst_uin=1090370813&spec=100" />
+<meta name="description" itemprop="description" content="我只是呆呆地等一场雪，心生欢喜" />
+ 
+
+   
+	<meta name="keywords" content="小边の个人主页,平面设计师">
+	
+	<meta name="description" content=""所谓的奇迹，要真的发生才有价值。"">
+    <title>
+小边の个人主页      
+    </title>
+ 
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="#">
+
+    <meta property="og:image" content="https://q1.qlogo.cn/headimg_dl?dst_uin=1090370813&spec=100">
+
+    <meta property="og:title" content="小边の个人主页">
+
+    <meta property="og:description" content="小边の个人主页">
+
+    <link rel="canonical" href="#">
+
+    <link rel="shortcut icon" href="https://q1.qlogo.cn/headimg_dl?dst_uin=1090370813&spec=100">
+
+    <link rel="bookmark" href="https://q1.qlogo.cn/headimg_dl?dst_uin=1090370813&spec=100">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://q1.qlogo.cn/headimg_dl?dst_uin=1090370813&spec=100">
+	
+    <link rel="stylesheet" type="text/css" href="css/dark.css" id="css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/dark.js"  type="text/javascript"></script>
+    
+    
+    
+    
+    
+    
+    
+ <!-----------------------------------------测试-------------------------------------------------->
+ 
+
+
+
+<script>
+	jQuery(document).ready(function() {
+	var QRBox	=	$('#QRBox');
+	var MainBox	=	$('#MainBox');
+	var AliPayQR	=	"https://cdn.jsdelivr.net/gh/zhx6/imgtuchuang/62777cbdd3b04fc8f4a11e055bd82866.png"; //支付宝二维码
+	var WeChanQR	=	"微信二维码.jpg"; //微信二维码
+	var QQQR     	=	"二维码.png"; //QQ二维码
+
+	
+
+	function showQR(QR) {
+		if (QR) {
+			MainBox.css('background-image','url(' + QR + ')');
+		}
+		$('#DonateText,#donateBox,#github').addClass('blur');
+		QRBox.fadeIn(300,function(argument) {
+			MainBox.addClass('showQR');
+		});
+	}
+
+	$('#donateBox>li').click(function(event) {
+		var thisID	=	$(this).attr('id');
+	if (thisID === 'AliPay') {
+			showQR(AliPayQR);
+		} else if (thisID === 'WeChat') {
+			showQR(WeChanQR);
+		} else if (thisID === 'QQ') {
+			showQR(QQQR);
+		
+		}
+	});
+
+	MainBox.click(function(event) {
+		MainBox.removeClass('showQR').addClass('hideQR');
+		setTimeout (function(a) {
+			QRBox.fadeOut(300,function(argument) {
+				MainBox.removeClass('hideQR');
+			});
+			$('#DonateText,#donateBox,#github').removeClass('blur');
+		},600);
+
+	});
+});
+</script>
+
+   <style>
+        .zuobiao i {
+            line-height: 1.8;
+            margin-right: 6px;
+            vertical-align: middle;
+            background-image: url(images/zuobiao.svg);
+            background-size: 100%;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-top: -2px;
+        }
+       
+    </style>
+    <style>
+     .user-warp img {
+            width:70px;
+            border-radius:30%;
+           }
+	    
+/*.dark-theme .user-warp img {
+            width:70px;
+            border-radius:100%;
+            animation: light 5s ease-in-out infinite;
+            transition: 0.5s;}*/
+
+
+	
+	    @keyframes light {
+ 0%{box-shadow: 0 0 4px #f00;}
+ 25%{box-shadow: 0 0 5px #0f0;} 
+ 50%{box-shadow: 0 0 4px #00f;}
+ 75%{box-shadow: 0 0 5px #0f0;} 
+ 100%{box-shadow: 0 0 4px #f00;}
+}
+      </style>
+
+</head>
+
+<body>
+	 
+<div class="wrapper">
+<header>
+    <nav class="navbar" id="mobile-toggle-theme">
+        <div class="container"></div>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------->
+    
+     
+</header> 
+
+    <div class="main">
+
+        <div class="container">
+            <div class="intro" style=" line-height: 50px">
+                <div class="user-warp img"><a href="#" target="_blank"><img src="33.jpg" alt="白鸽の个人主页"></a></div>
+                <div class="nickname">#小边の秘密基地#</div>
+                <div class="description">
+                    <p>“就让时间证明我们的爱不是一时兴起。”</p>
+
+                </div>
+
+
+                <div class="zuobiao">
+                    <i class="ico_map"></i>中国 ·河北
+                    <span style="margin-left: 30px">
+                            <input id="switch_default" type="checkbox" class="switch_default">
+                            <label for="switch_default" class="toggleBtn"></label></span>
+                </div>
+
+
+                
+                <div class="menu navbar-right links">
+
+                    <!-- 获取页面列表 -->
+
+                    <a class="menu-item" href="#" target="_self">
+                    主页</a> · 
+
+                    <a class="menu-item" href="#" target="_self">
+                    博客</a> ·
+			
+		    <a class="menu-item" href="#" target="_self">
+                    QQ</a> ·
+
+                    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=1656864013@qq.com" target="_blank">
+                    邮箱</a> 
+<center>
+
+
+
+    <div id="header">
+    </div>
+    <div id="main">
+        <div class="demo">
+            
+            
+            
+            <div id="player3" class="aplayer">
+                <pre class="aplayer-lrc-content">
+    
+                    [00:00.00]焦迈奇 - 我的名字
+                    [00:00.00] 作词 : 焦迈奇
+[00:00.15] 作曲 : 焦迈奇
+[00:00.30]
+[00:00.83]
+[00:00.84]拜托你轻声重着我的名字
+[00:08.98]我学大人的语气应着你
+[00:17.29]庆幸自己没跑太久
+[00:20.42]还活在弹丸之地
+[00:24.12]纯粹得以为世界等同于你
+[00:32.65]
+[00:50.30]拜托你大声怒斥我的名字
+[00:57.15]我要赌气向远方跑去
+[01:04.02]如果没有这些声音
+[01:06.64]我还搞不清
+[01:09.61]多远才算是离开的距离
+[01:15.35]
+[01:17.11]在死缠烂打的青春日子里
+[01:24.09]无非挣扎得也就那么几个问题
+[01:29.95]
+[01:34.14]我习惯在包里藏一瓶百无聊赖
+[01:40.56]打发人间的白云和苍狗
+[01:43.06]设计睡着的未来
+[01:47.87]我庆幸那些难堪正中我的下怀
+[01:54.61]让我怀疑我的存在
+[01:57.06]最后笑了起来
+[02:01.17]
+[02:16.02]拜托你轻声重着我的名字
+[02:22.89]我学大人的语气应着你
+[02:29.70]庆幸自己没跑太久
+[02:32.51]还活在弹丸之地
+[02:35.30]纯粹得以为世界等同于你
+[02:42.26]
+[02:42.64]我习惯在包里藏一瓶百无聊赖
+[02:49.24]打发人间的白云和苍狗
+[02:51.59]设计睡着的未来
+[02:56.31]我庆幸那些难堪正中我的下怀
+[03:03.18]让我怀疑我的存在
+[03:05.35]最后笑了起来
+[03:10.00]
+[03:24.48]我会懂得舍得记得
+[03:26.02]你是我是你的
+[03:27.59]我会懂得舍得记得
+[03:29.27]你是我是你的
+[03:31.00]我会懂得舍得记得
+[03:32.69]你是我是你的
+[03:34.41]我会懂得舍得记得
+[03:36.51]
+[03:37.92]我会懂得舍得记得
+[03:39.53]你是我是你的
+[03:41.24]我会懂得舍得记得
+[03:43.13]你是我是你的
+[03:44.77]我会懂得舍得记得
+[03:46.48]你是我是你的
+[03:48.11]我会懂得舍得记得
+[03:50.61]
+[03:53.98]拜托你轻声重着…
+[03:57.69]
+[04:03.63]编曲 : 李天衣/许蔚天
+[04:04.16]制作人 : 许蔚天
+[04:04.57]鼓 : Hayato
+[04:04.96]贝斯 : 崔文正
+[04:05.46]吉他 : 周坤
+[04:05.92]录音师 : 李卓@TC Faders
+[04:06.30]混音师 : 李卓@TC Faders
+[04:06.64]音频编辑 : 李卓@TC Faders
+[04:07.02]母带制作 : 周天澈@TC Faders
+[04:07.42]录音棚 : 55 TEC Studio
+
+
+                    
+     
+                </pre>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ap3 = new APlayer({
+            element: document.getElementById('player3'),//样式1
+            narrow: false,
+            autoplay: true,
+            showlrc: true,
+            music: {
+                title: '我的名字',
+                author: '焦迈奇',
+                url: 'https://sharefs.ali.kugou.com/202202191336/793bb961a270e21329ac0c531959d2fb/KGTX/CLTX001/66b790b27f6c65d4fa38af92739597a7.mp3',
+                pic: 'http://p1.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300x300'
+            }
+        });
+        ap3.init();
+    </script>
+    
+        </center>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+     
+     
+     
+     
+     
+        <!------------------------------------------------------------------------------------------->
+        
+       
+    
+    
+    
+    
+    
+        <!------------------------------------------------------------------------------------------->
+                    </div><br>
+                   <div style=" line-height: 20px;font-size: 9pt;">
+                        <p>"出言有尺，嬉闹有度，做事有余，说话有德。"</p>
+                            <p style="margin-left: 8rem;font-size: 8pt;"><small>—— 白鸽</small></p>
+                
+                
+                    </div>
+                    
+            <br>
+                     <center>
+        <ul id="donateBox" class="list pos-f tr3">
+            <li id="AliPay">AliPay</li>
+            <li id="WeChat">WeChat</li>
+            <li id="QQ">QQ</li>
+            
+        </ul>
+        <div id="QRBox" class="pos-f left-100">
+            <div id="MainBox"></div>
+        </div>
+    </center>
+                    <!-- <a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备16005944号-5</a> -->
+                </div>
+                
+                
+            </div>
+    
+    </div>
+    
+    <footer id="footer" class="footer">
+                 
+             <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        
+            <!------------------------------------------------------------------------------------------->
+            
+        
+        
+    </footer>
+    
+    </div>
+    
+    
+    </html>
+    
+
+   
+ 
+ 
+ 
+    
